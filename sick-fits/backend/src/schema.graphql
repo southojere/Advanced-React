@@ -1,0 +1,13 @@
+# contains all our querys and resolvers.
+# client facing types querys and mutation live here
+type User {
+  name:String!
+}
+
+type Mutation {
+  createUser(name:String!): User
+}
+
+type Query {
+  users: [User]!
+}
